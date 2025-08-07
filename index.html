@@ -5,16 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Tsero</title>
   <style>
-    body {
+    * {
+      box-sizing: border-box;
+    }
+    html, body {
       margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
       font-family: Arial, sans-serif;
       background-color: #ffffff;
       color: #111;
+    }
+    .container {
+      height: 100vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      height: 100vh;
       text-align: center;
       padding: 0 20px;
     }
@@ -41,13 +49,10 @@
       border-radius: 8px;
       font-weight: bold;
       transition: background-color 0.3s ease;
-      margin-bottom: 2em;
+      margin-bottom: 1.5em;
     }
     a.button:hover {
       background-color: #333;
-    }
-    .social {
-      margin-top: 1em;
     }
     .social a {
       display: inline-block;
@@ -59,29 +64,33 @@
       filter: grayscale(100%);
     }
     footer {
-      position: absolute;
-      bottom: 20px;
       font-size: 0.9em;
       color: #777;
+      margin-top: auto;
+      padding-bottom: 10px;
     }
   </style>
 </head>
 <body>
-  <img src="/img/tsero.png" alt="Tsero Logo" class="logo" />
-  <h1>Tsero</h1>
-  <p>A private Georgian chat app is coming.<br />
-     Simple. Secure. Yours.</p>
-  <a href="https://form.typeform.com/to/V3r3SYVW" class="button" target="_blank">Join the Beta</a>
+  <div class="container">
+    <img src="/img/tsero.png" alt="Tsero Logo" class="logo" />
+    <h1>Tsero</h1>
+    <p>A private Georgian chat app is coming.<br />
+       Simple. Secure. Yours.</p>
+    <a href="https://form.typeform.com/to/V3r3SYVW" class="button" target="_blank">Join the Beta</a>
 
-  <div class="social">
-    <a href="https://instagram.com/tsero.ge" target="_blank">
-      <img src="/img/ig.png" alt="Instagram" />
-    </a>
+    <div class="social">
+      <a href="https://instagram.com/tsero.ge" target="_blank">
+        <img src="/img/ig.png" alt="Instagram" />
+      </a>
+    </div>
+
+    <footer>
+      Made in Georgia 🇬🇪 by Levan Buachidze<br />
+      &copy; 2025 Tsero Georgia
+    </footer>
   </div>
-
-  <footer>
-    Made in Georgia 🇬🇪 by Levan Buachidze<br />
-    &copy; 2025 Tsero Georgia
-  </footer>
 </body>
 </html>
+
+
