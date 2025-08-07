@@ -17,14 +17,19 @@
       background-color: #ffffff;
       color: #111;
     }
-    .container {
+    .wrapper {
       height: 100vh;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+    }
+    .content {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      text-align: center;
-      padding: 0 20px;
     }
     img.logo {
       width: 105px;
@@ -64,25 +69,30 @@
       filter: grayscale(100%);
     }
     footer {
+      position: absolute;
+      bottom: 15px;
+      left: 0;
+      right: 0;
+      text-align: center;
       font-size: 0.9em;
       color: #777;
-      margin-top: auto;
-      padding-bottom: 10px;
+      line-height: 1.5;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <img src="/img/tsero.png" alt="Tsero Logo" class="logo" />
-    <h1>Tsero</h1>
-    <p>A private Georgian chat app is coming.<br />
-       Simple. Secure. Yours.</p>
-    <a href="https://form.typeform.com/to/V3r3SYVW" class="button" target="_blank">Join the Beta</a>
-
-    <div class="social">
-      <a href="https://instagram.com/tsero.ge" target="_blank">
-        <img src="/img/ig.png" alt="Instagram" />
-      </a>
+  <div class="wrapper">
+    <div class="content">
+      <img src="/img/tsero.png" alt="Tsero Logo" class="logo" />
+      <h1>Tsero</h1>
+      <p>A private Georgian chat app is coming.<br />
+         Simple. Secure. Yours.</p>
+      <a href="https://form.typeform.com/to/V3r3SYVW" class="button" target="_blank">Join the Beta</a>
+      <div class="social">
+        <a href="https://instagram.com/tsero.ge" target="_blank">
+          <img src="/img/ig.png" alt="Instagram" />
+        </a>
+      </div>
     </div>
 
     <footer>
